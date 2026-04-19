@@ -11,7 +11,7 @@ import React, { useState } from 'react';
 import './Contact.css';
 import DATA from '../../data';
 
-const FORMSPREE_ID = "YOUR_FORM_ID"; // ← replace after signing up at formspree.io
+const FORMSPREE_ID = "mjgjrolq"; // ← replace after signing up at formspree.io
 
 function Contact() {
   const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
