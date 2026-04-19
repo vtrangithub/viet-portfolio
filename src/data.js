@@ -24,14 +24,14 @@ const DATA = {
   // Steps to add your photo:
   // 1. Copy your photo into the /public folder e.g. public/profile.jpg
   // 2. Change null below to "/profile.jpg"
-  photo: null, // e.g. "/profile.jpg"
+  photo: "/profile.JPG", // e.g. "/profile.jpg"
 
   // ── GOOGLE ANALYTICS ──────────────────────────────────────
   // 1. Go to analytics.google.com and create a free account
   // 2. Create a property for your website
   // 3. Copy the Measurement ID (looks like "G-XXXXXXXXXX")
   // 4. Replace the value below with your real ID
-  analyticsId: "G-XXXXXXXXXX",
+  analyticsId: "G-8EHJL4L4JR",
 
   skills: [
     { category: "Languages", icon: "⌨", items: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "C", "HTML/CSS"] },
