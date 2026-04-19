@@ -1,0 +1,17 @@
+/* ── App-level styles ── */
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed; top: 0; left: 0; height: 3px; z-index: 400;
+  background: linear-gradient(90deg, var(--accent), var(--purple));
+  transition: width 0.1s linear;
+}
+
+main { position: relative; z-index: 1; }
+
+.site-footer {
+  position: relative; z-index: 1; text-align: center;
+  padding: 2rem 1rem; border-top: 1px solid var(--border);
+  font-family: var(--mono); font-size: 0.58rem; color: var(--muted);
+  line-height: 1.8; transition: border-color var(--transition, 0.3s), color var(--transition, 0.3s);
+}

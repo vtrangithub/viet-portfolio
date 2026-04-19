@@ -1,0 +1,49 @@
+/* ── Background Grid ── */
+/* Faint cyan lines forming a grid across the entire page */
+.bg-grid {
+  position: fixed;
+  inset: 0;              /* shorthand for top/right/bottom/left: 0 */
+  z-index: 0;
+  pointer-events: none;  /* clicks pass through — it's purely visual */
+  background-image:
+    linear-gradient(rgba(0, 207, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 207, 255, 0.025) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* ── Glowing Orbs ── */
+/* Each orb is a large blurred circle — creates a subtle atmospheric glow */
+.bg-orb {
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(130px); /* heavy blur = soft glow instead of hard circle */
+}
+
+/* Purple orb — top right corner */
+.orb-a {
+  width: 700px;
+  height: 700px;
+  background: rgba(124, 109, 250, 0.1);
+  top: -250px;
+  right: -200px;
+}
+
+/* Cyan orb — bottom left corner */
+.orb-b {
+  width: 500px;
+  height: 500px;
+  background: rgba(0, 207, 255, 0.07);
+  bottom: -150px;
+  left: -100px;
+}
+
+/* Gold orb — center of page */
+.orb-c {
+  width: 400px;
+  height: 400px;
+  background: rgba(245, 166, 35, 0.05);
+  top: 50%;
+  left: 40%;
+}

@@ -1,0 +1,42 @@
+.modal-overlay { position: fixed; inset: 0; z-index: 500; background: rgba(4,7,12,0.92); backdrop-filter: blur(6px); display: flex; align-items: flex-start; justify-content: center; padding: 1rem; overflow-y: auto; animation: fadeIn 0.2s ease; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.modal-box { background: var(--surf); border: 1px solid var(--border); border-radius: 8px; width: 100%; max-width: 820px; padding: 2.5rem; position: relative; animation: slideUp 0.25s ease; margin: auto; }
+@keyframes slideUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+.modal-close { position: absolute; top: 1rem; right: 1.2rem; background: none; border: none; cursor: pointer; font-family: var(--mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; transition: color 0.2s; }
+.modal-close:hover { color: var(--accent); }
+.resume-header { text-align: center; margin-bottom: 1.8rem; padding-bottom: 1.4rem; border-bottom: 1px solid var(--border); }
+.resume-name { font-size: clamp(1.4rem, 5vw, 2rem); font-weight: 800; color: #fff; margin-bottom: 0.4rem; }
+.resume-title { font-family: var(--mono); font-size: clamp(0.58rem, 2vw, 0.78rem); color: var(--accent); letter-spacing: 0.08em; margin-bottom: 0.8rem; line-height: 1.5; }
+.resume-contact { display: flex; justify-content: center; gap: 1.2rem; flex-wrap: wrap; font-family: var(--mono); font-size: 0.62rem; color: var(--muted); }
+.resume-contact a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.resume-contact a:hover { color: var(--accent); }
+.resume-section { margin-bottom: 1.8rem; }
+.resume-section-title { font-family: var(--mono); font-size: 0.62rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.2em; margin-bottom: 0.9rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--border); }
+.resume-summary { font-size: 0.85rem; color: var(--muted); line-height: 1.8; font-weight: 300; }
+.resume-skills-grid { display: flex; flex-direction: column; gap: 0.45rem; }
+.resume-skill-row { display: flex; gap: 0.5rem; align-items: baseline; font-size: 0.83rem; flex-wrap: wrap; }
+.resume-skill-label { font-family: var(--mono); font-size: 0.6rem; color: var(--accent); white-space: nowrap; min-width: 110px; }
+.resume-skill-value { color: var(--muted); }
+.resume-job { margin-bottom: 1.4rem; }
+.resume-job:last-child { margin-bottom: 0; }
+.resume-job-header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 0.2rem; flex-wrap: wrap; }
+.resume-job-role { font-size: 0.92rem; font-weight: 700; color: #fff; }
+.resume-job-year { font-family: var(--mono); font-size: 0.6rem; color: var(--muted); white-space: nowrap; }
+.resume-job-company { font-family: var(--mono); font-size: 0.67rem; color: var(--gold); margin-bottom: 0.55rem; }
+.resume-job-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.32rem; }
+.resume-job-bullets li { font-size: 0.82rem; color: var(--muted); line-height: 1.7; padding-left: 1rem; position: relative; }
+.resume-job-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); font-size: 0.55rem; top: 0.28rem; }
+.resume-edu-item { display: flex; justify-content: space-between; align-items: baseline; padding: 0.55rem 0; border-bottom: 1px solid rgba(22,32,48,0.5); gap: 1rem; }
+.resume-edu-item:last-child { border-bottom: none; }
+.resume-edu-degree { font-size: 0.85rem; font-weight: 600; color: #fff; }
+.resume-edu-school { font-family: var(--mono); font-size: 0.6rem; color: var(--muted); margin-top: 0.12rem; }
+.resume-edu-year { font-family: var(--mono); font-size: 0.6rem; color: var(--purple); white-space: nowrap; }
+
+@media (max-width: 768px) {
+  .modal-box { padding: 1.8rem 1rem; margin: 0.5rem; }
+  .resume-job-header { flex-direction: column; gap: 0.1rem; }
+  .resume-edu-item { flex-direction: column; gap: 0.12rem; }
+  .resume-contact { gap: 0.7rem; font-size: 0.58rem; }
+  .resume-skill-label { min-width: 90px; }
+  .resume-skill-row { flex-direction: column; gap: 0.15rem; }
+}

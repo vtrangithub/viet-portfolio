@@ -1,0 +1,31 @@
+/* ── Work Timeline ── */
+.timeline { position: relative; }
+.timeline::before {
+  content: ''; position: absolute; left: 155px; top: 0; bottom: 0;
+  width: 1px; background: linear-gradient(to bottom, transparent, var(--border) 10%, var(--border) 90%, transparent);
+}
+.t-item { display: grid; grid-template-columns: 145px 1fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid rgba(22,32,48,0.5); }
+.t-item:last-child { border-bottom: none; }
+.t-year { font-family: var(--mono); font-size: 0.6rem; color: var(--muted); padding-top: 0.3rem; line-height: 1.6; }
+.t-role { font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.2rem; }
+.t-company { font-family: var(--mono); font-size: 0.65rem; color: var(--gold); margin-bottom: 0.8rem; }
+.t-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.t-bullets li { font-size: 0.85rem; color: var(--muted); line-height: 1.75; padding-left: 1rem; position: relative; }
+.t-bullets li::before { content: '▸'; position: absolute; left: 0; color: var(--accent); font-size: 0.55rem; top: 0.28rem; }
+
+/* ── Education ── */
+.edu-section { margin-top: 3.5rem; }
+.edu-list { display: flex; flex-direction: column; }
+.edu-item { display: flex; justify-content: space-between; align-items: baseline; padding: 0.9rem 0; border-bottom: 1px solid var(--border); gap: 1rem; }
+.edu-item:last-child { border-bottom: none; }
+.edu-degree { font-size: 0.9rem; font-weight: 600; color: #fff; }
+.edu-school { font-family: var(--mono); font-size: 0.62rem; color: var(--muted); margin-top: 0.2rem; }
+.edu-year { font-family: var(--mono); font-size: 0.62rem; color: var(--purple); white-space: nowrap; }
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .timeline::before { display: none; }
+  .t-item { grid-template-columns: 1fr; gap: 0.3rem; }
+  .t-year { color: var(--accent); padding-top: 0; }
+  .edu-item { flex-direction: column; gap: 0.15rem; }
+}
