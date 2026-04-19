@@ -24,7 +24,7 @@ const DATA = {
   // Steps to add your photo:
   // 1. Copy your photo into the /public folder e.g. public/profile.jpg
   // 2. Change null below to "/profile.jpg"
-  photo: "/profile.JPG", // e.g. "/profile.jpg"
+  photo: "/viet-avatar-cool.svg", // e.g. "/profile.jpg"
 
   // ── GOOGLE ANALYTICS ──────────────────────────────────────
   // 1. Go to analytics.google.com and create a free account
