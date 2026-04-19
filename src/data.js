@@ -31,7 +31,7 @@ const DATA = {
   // 2. Create a property for your website
   // 3. Copy the Measurement ID (looks like "G-XXXXXXXXXX")
   // 4. Replace the value below with your real ID
-  analyticsId: "G-8EHJL4L4JR",
+  analyticsId: "G-XXXXXXXXXX",
 
   skills: [
     { category: "Languages", icon: "⌨", items: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "C", "HTML/CSS"] },
@@ -141,6 +141,16 @@ const DATA = {
       readTime: "4 min read",
       excerpt: "You don't need to be a DevOps engineer to benefit from understanding AWS, Azure, and GCP. Here's where I'd start.",
       content: `I came to cloud through necessity — deploying my own projects. But what surprised me was how much cloud knowledge changed the way I think about system design at work.\n\nStart with S3 (storage), EC2 (compute), and IAM (permissions). Those three services alone will give you 80% of the mental model you need.\n\nOnce you understand those, Lambda, RDS, and API Gateway will start to make sense naturally. Don't try to learn everything at once — just build something and deploy it.`,
+    },
+    {
+      id: 5,
+      category: "Medical Devices",
+      icon: "🏥",
+      title: "Inside Siemens Ultrasound: What It Takes to Measure Acoustic Power",
+      date: "Apr 2026",
+      readTime: "6 min read",
+      excerpt: "As Acoustic Power Lab Lead at Siemens, I work at the intersection of precision measurement, regulatory compliance, and medical imaging. Here's what that actually looks like day to day.",
+      content: `Most people don't think about what goes into an ultrasound machine beyond the gel and the probe. But inside every Siemens ultrasound system is a complex chain of hardware, software, and calibration processes that has to meet some of the strictest safety standards in any industry.\n\nAt Siemens Medical Solutions in Issaquah, I lead the Acoustic Power lab — the team responsible for measuring and validating the acoustic output of ultrasound transducers before they can be cleared for clinical use.\n\nWhat is acoustic power measurement?\nUltrasound imaging works by emitting high-frequency sound waves into the body and listening for the echoes. But those waves carry energy — and too much energy can cause tissue heating or cavitation. The FDA and IEC 60601 standards set strict limits on acoustic output, and every transducer must be tested and documented before it ships.\n\nOur lab measures parameters like Total Acoustic Power (TAP), Spatial Peak Temporal Average Intensity (ISPTA), and Mechanical Index (MI) — all of which determine how safe a given transducer is for diagnostic use.\n\nThe calibration challenge\nThe hardest part isn't the measurement itself — it's maintaining calibration accuracy across dozens of transducer models. A hydrophone that's off by even a fraction of a dB can cascade into a compliance failure that delays a product launch by weeks. I developed troubleshooting protocols that cut our measurement inconsistency rate significantly and introduced a streamlined inventory system that improved lab uptime.\n\nWhere software meets hardware\nOne of the most interesting parts of this role is managing software integration — installing and validating imaging software updates on ultrasound machines and ensuring acoustic output profiles remain within spec after each update. This is where my software development background becomes directly useful. Working in a regulated medical device environment, where documentation is as important as the measurement itself, has made me a more rigorous engineer in every domain I work in.`,
     },
     {
       id: 4,

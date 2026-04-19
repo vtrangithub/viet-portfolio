@@ -13,7 +13,7 @@ import React, { useState } from 'react';
 import './Blog.css';
 import DATA from '../../data';
 
-const CATEGORIES = ['All', 'Tech & Coding', 'Aerospace Engineering'];
+const CATEGORIES = ['All', 'Tech & Coding', 'Aerospace Engineering', 'Medical Devices'];
 
 function BlogModal({ post, onClose }) {
   React.useEffect(() => {
