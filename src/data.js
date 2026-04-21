@@ -110,6 +110,18 @@ const DATA = {
     { tag: "Fitness", icon: "🏋", title: "Gym, Discipline & the Long Game", body: "Consistent training keeps me sharp and energized. The same principles that build strength in the gym — progressive overload, tracking, patience — apply directly to mastering new technologies." },
   ],
 
+  // ── ORIGINAL MUSIC ── My own audio track ──────────────────
+  // Steps to add your audio file:
+  // 1. Copy your MP3 into the /public folder e.g. public/my-track.mp3
+  // 2. Update the "src" below to match the filename, e.g. "/my-track.mp3"
+  // 3. Update the title, artist, and description as you like
+  music: {
+    title: "Making My Way-Track",
+    artist: "Viet H Tran",
+    description: "An original piece I produced myself. Press play.",
+    src: "/Making-My-Way-Remix.mp3", // <— change this to match your file in /public
+  },
+
   // ── BLOG POSTS ── Add, edit, or remove posts here ─────────────────────────
   blog: [
     {
