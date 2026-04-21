@@ -11,7 +11,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import DATA from './data';
-import Music from "./components/Music/Music";
+
 // Hooks
 import useActiveSection from './hooks/useActiveSection';
 import useFadeUp from './hooks/useFadeUp';
@@ -76,7 +76,6 @@ function App() {
         <Projects />
         <Career />
         <Blog />
-        <Music />
         <Hobbies />
         <Contact />
         <footer className="site-footer">

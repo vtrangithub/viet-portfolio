@@ -6,6 +6,72 @@
 .hobby-title { font-size: 0.95rem; font-weight: 700; color: #fff; margin-bottom: 0.7rem; line-height: 1.3; }
 .hobby-body { font-size: 0.85rem; color: var(--muted); line-height: 1.8; font-weight: 300; }
 
+/* ---- Mini audio player (shown when a hobby has an "audio" field) ---- */
+.hobby-audio {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.hobby-audio-btn {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid var(--green);
+  background: transparent;
+  color: var(--green);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+.hobby-audio-btn:hover:not(:disabled) {
+  background: var(--green);
+  color: var(--surf);
+  transform: scale(1.05);
+}
+.hobby-audio-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+.hobby-audio-btn.is-playing {
+  background: var(--green);
+  color: var(--surf);
+}
+.hobby-waveform {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 22px;
+}
+.hobby-bar {
+  flex: 1;
+  background: var(--green);
+  border-radius: 1px;
+  height: 20%;
+  opacity: 0.35;
+  transition: opacity 0.3s ease;
+}
+.hobby-waveform.is-playing .hobby-bar {
+  opacity: 1;
+  animation: hobbyPulse 0.9s ease-in-out infinite alternate;
+}
+@keyframes hobbyPulse {
+  0%   { height: 15%; }
+  50%  { height: 75%; }
+  100% { height: 30%; }
+}
+.hobby-audio-error {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+
 @media (max-width: 768px) {
   .hobbies-grid { grid-template-columns: 1fr; }
 }

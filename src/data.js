@@ -104,24 +104,24 @@ const DATA = {
     { degree: "Associate of Science in Engineering",    school: "Bellevue College",          year: "2011" },
   ],
 
+  // ── HOBBIES ── Personal interests shown as cards ──────────
+  // Each card supports an optional "audio" field — if present, the card renders
+  // a mini audio player (play button + waveform) instead of a description.
+  // The MP3 is hosted on GitHub Releases (not in the repo) to keep the repo small.
   hobbies: [
     { tag: "Outdoor Adventure", icon: "🏔", title: "Hiking the Pacific Northwest", body: "The PNW has some of the most stunning trails in the country. From Mount Rainier to Olympic National Park — every hike is a reset button for the mind." },
     { tag: "Fishing", icon: "🎣", title: "Chasing Salmon in Washington Waters", body: "Early mornings on the water, reading currents and waiting for the right moment. The patience fishing demands translates surprisingly well to debugging and systems thinking." },
     { tag: "Fitness", icon: "🏋", title: "Gym, Discipline & the Long Game", body: "Consistent training keeps me sharp and energized. The same principles that build strength in the gym — progressive overload, tracking, patience — apply directly to mastering new technologies." },
+    {
+      tag: "Favorite Track",
+      icon: "🎧",
+      title: "Making My Way — ST-MTP",
+      body: "One of my favorites. Press play.",
+      audio: {
+        src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Making-My-Way-Remix.mp3",
+      },
+    },
   ],
-
-  // ── ORIGINAL MUSIC ── My own audio track ──────────────────
-  // The MP3 is hosted on GitHub Releases (not in the repo) to keep the repo small.
-  // To replace the track:
-  //   1. Go to your repo on GitHub → Releases → Edit the release
-  //   2. Delete the old MP3 and upload the new one
-  //   3. Right-click the new file → Copy link address → paste into "src" below
-  music: {
-    title: "Making My Way",
-    artist: "ST-MTP",
-    description: "One of my fav ones. Press play.",
-    src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Making-My-Way-Remix.mp3",
-  },
 
   // ── BLOG POSTS ── Add, edit, or remove posts here ─────────────────────────
   blog: [
