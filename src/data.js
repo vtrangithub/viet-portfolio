@@ -111,15 +111,16 @@ const DATA = {
   ],
 
   // ── ORIGINAL MUSIC ── My own audio track ──────────────────
-  // Steps to add your audio file:
-  // 1. Copy your MP3 into the /public folder e.g. public/my-track.mp3
-  // 2. Update the "src" below to match the filename, e.g. "/my-track.mp3"
-  // 3. Update the title, artist, and description as you like
+  // The MP3 is hosted on GitHub Releases (not in the repo) to keep the repo small.
+  // To replace the track:
+  //   1. Go to your repo on GitHub → Releases → Edit the release
+  //   2. Delete the old MP3 and upload the new one
+  //   3. Right-click the new file → Copy link address → paste into "src" below
   music: {
-    title: "Making My Way-Track",
+    title: "Making My Way",
     artist: "Viet H Tran",
     description: "An original piece I produced myself. Press play.",
-    src: "/Making-My-Way-Remix.mp3", // <— change this to match your file in /public
+    src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Making-My-Way-Remix.mp3",
   },
 
   // ── BLOG POSTS ── Add, edit, or remove posts here ─────────────────────────
