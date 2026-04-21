@@ -118,8 +118,8 @@ const DATA = {
   //   3. Right-click the new file → Copy link address → paste into "src" below
   music: {
     title: "Making My Way",
-    artist: "Viet H Tran",
-    description: "An original piece I produced myself. Press play.",
+    artist: "ST-MTP",
+    description: "One of my fav ones. Press play.",
     src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Making-My-Way-Remix.mp3",
   },
 

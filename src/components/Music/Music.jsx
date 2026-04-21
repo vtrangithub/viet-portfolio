@@ -55,8 +55,8 @@ export default function Music() {
   return (
     <section id="music" className="music-section">
       <div className="music-container">
-        <div className="music-eyebrow">— Original Audio —</div>
-        <h2 className="music-heading">My Track</h2>
+        <div className="music-eyebrow">— Favorite Audio —</div>
+        <h2 className="music-heading">My Fav Track</h2>
 
         <div className="music-card">
           {/* Hidden native audio element — we control it via the button */}
