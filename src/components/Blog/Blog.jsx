@@ -93,7 +93,7 @@ function Blog() {
       </div>
 
       {/* Blog cards */}
-      <div className="blog-grid">
+      <div className="blog-grid" key={filter}>
         {filtered.map((post, i) => (
           <div
             className="blog-card fu"
