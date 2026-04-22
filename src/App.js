@@ -28,11 +28,12 @@ import Skills        from './components/Skills/Skills';
 import Projects      from './components/Projects/Projects';
 import Career        from './components/Career/Career';
 import Blog          from './components/Blog/Blog';
+import TechNews      from './components/TechNews/TechNews';
 import Hobbies       from './components/Hobbies/Hobbies';
 import Contact       from './components/Contact/Contact';
 import ResumeModal   from './components/ResumeModal/ResumeModal';
 
-const SECTION_IDS = ['hero', 'skills', 'projects', 'career', 'blog', 'hobbies', 'contact'];
+const SECTION_IDS = ['hero', 'skills', 'projects', 'career', 'blog', 'tech-news', 'hobbies', 'contact'];
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -76,6 +77,7 @@ function App() {
         <Projects />
         <Career />
         <Blog />
+        <TechNews />
         <Hobbies />
         <Contact />
         <footer className="site-footer">
