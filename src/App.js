@@ -30,10 +30,11 @@ import Career        from './components/Career/Career';
 import Blog          from './components/Blog/Blog';
 import TechNews      from './components/TechNews/TechNews';
 import Hobbies       from './components/Hobbies/Hobbies';
+import Music         from './components/Music/Music';
 import Contact       from './components/Contact/Contact';
 import ResumeModal   from './components/ResumeModal/ResumeModal';
 
-const SECTION_IDS = ['hero', 'skills', 'projects', 'career', 'blog', 'tech-news', 'hobbies', 'contact'];
+const SECTION_IDS = ['hero', 'skills', 'projects', 'career', 'blog', 'tech-news', 'hobbies', 'music', 'contact'];
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -79,6 +80,7 @@ function App() {
         <Blog />
         <TechNews />
         <Hobbies />
+        <Music />
         <Contact />
         <footer className="site-footer">
           © {new Date().getFullYear()} Viet H Tran · Software Development Engineer & Engineering Specialist · Renton, Washington

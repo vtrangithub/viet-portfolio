@@ -34,10 +34,49 @@ const DATA = {
   analyticsId: "G-XXXXXXXXXX",
 
   skills: [
-    { category: "Languages", icon: "⌨", items: ["Python", "JavaScript", "TypeScript", "Java", "SQL", "C", "HTML/CSS"] },
-    { category: "Frameworks & UI", icon: "⚛", items: ["React", "Redux", "Node.js", "Express", "Material-UI", "Bootstrap"] },
-    { category: "Cloud & DevOps", icon: "☁", items: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "CI/CD", "Git"] },
-    { category: "Data & Tools", icon: "🛠", items: ["MongoDB", "REST APIs", "JWT", "Jest", "SAP", "LabVIEW", "SharePoint"] },
+    {
+      category: "Languages",
+      icon: "⌨",
+      items: [
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Java",
+        "SQL",
+        "C",
+        "HTML/CSS",
+      ],
+    },
+    {
+      category: "Frameworks & UI",
+      icon: "⚛",
+      items: [
+        "React",
+        "Redux",
+        "Node.js",
+        "Express",
+        "Material-UI",
+        "Bootstrap",
+      ],
+    },
+    {
+      category: "Cloud & DevOps",
+      icon: "☁",
+      items: ["AWS", "Azure", "GCP", "Docker", "Kubernetes", "CI/CD", "Git"],
+    },
+    {
+      category: "Data & Tools",
+      icon: "🛠",
+      items: [
+        "MongoDB",
+        "REST APIs",
+        "JWT",
+        "Jest",
+        "SAP",
+        "LabVIEW",
+        "SharePoint",
+      ],
+    },
   ],
 
   projects: [
@@ -98,28 +137,92 @@ const DATA = {
   ],
 
   education: [
-    { degree: "Full Stack Web Development Certificate", school: "University of Washington", year: "2024" },
-    { degree: "Bachelor of Science in Engineering",     school: "University of Washington", year: "2015" },
-    { degree: "Full Stack Web Dev Bootcamp (JS + Python/SQL/DevOps)", school: "Nucamp Bootcamp", year: "2022" },
-    { degree: "Associate of Science in Engineering",    school: "Bellevue College",          year: "2011" },
+    {
+      degree: "Full Stack Web Development Certificate",
+      school: "University of Washington",
+      year: "2024",
+    },
+    {
+      degree: "Bachelor of Science in Engineering",
+      school: "University of Washington",
+      year: "2015",
+    },
+    {
+      degree: "Full Stack Web Dev Bootcamp (JS + Python/SQL/DevOps)",
+      school: "Nucamp Bootcamp",
+      year: "2022",
+    },
+    {
+      degree: "Associate of Science in Engineering",
+      school: "Bellevue College",
+      year: "2011",
+    },
   ],
 
   // ── HOBBIES ── Personal interests shown as cards ──────────
-  // Each card supports an optional "audio" field — if present, the card renders
-  // a mini audio player (play button + waveform) instead of a description.
-  // The MP3 is hosted on GitHub Releases (not in the repo) to keep the repo small.
   hobbies: [
-    { tag: "Outdoor Adventure", icon: "🏔", title: "Hiking the Pacific Northwest", body: "The PNW has some of the most stunning trails in the country. From Mount Rainier to Olympic National Park — every hike is a reset button for the mind." },
-    { tag: "Fishing", icon: "🎣", title: "Chasing Salmon in Washington Waters", body: "Early mornings on the water, reading currents and waiting for the right moment. The patience fishing demands translates surprisingly well to debugging and systems thinking." },
-    { tag: "Fitness", icon: "🏋", title: "Gym, Discipline & the Long Game", body: "Consistent training keeps me sharp and energized. The same principles that build strength in the gym — progressive overload, tracking, patience — apply directly to mastering new technologies." },
     {
-      tag: "Favorite Track",
-      icon: "🎧",
-      title: "Making My Way — ST-MTP",
-      body: "One of my favorites. Press play.",
-      audio: {
-        src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Making-My-Way-Remix.mp3",
-      },
+      tag: "Outdoor Adventure",
+      icon: "🏔",
+      title: "Hiking the Pacific Northwest",
+      body: "The PNW has some of the most stunning trails in the country. From Mount Rainier to Olympic National Park — every hike is a reset button for the mind.",
+    },
+    {
+      tag: "Fishing",
+      icon: "🎣",
+      title: "Chasing Salmon in Washington Waters",
+      body: "Early mornings on the water, reading currents and waiting for the right moment. The patience fishing demands translates surprisingly well to debugging and systems thinking.",
+    },
+    {
+      tag: "Fitness",
+      icon: "🏋",
+      title: "Gym, Discipline & the Long Game",
+      body: "Consistent training keeps me sharp and energized. The same principles that build strength in the gym — progressive overload, tracking, patience — apply directly to mastering new technologies.",
+    },
+  ],
+
+  // ── MUSIC ── Tracks made with Suno AI ─────────────────────
+  // How to add a new track:
+  // 1. Export your Suno track as MP3
+  // 2. Upload it to GitHub Releases (Releases → Draft new release → attach file)
+  //    URL format: https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/YourTrack.mp3
+  // 3. Add a new entry below with title, genre, vibe, and src
+  music: [
+    {
+      title: "Viet Seattle — Who I Am",
+      genre: "Hip-Hop",
+      vibe: "Intro",
+      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Viet.Seattle.Who.I.Am.Intro.mp3",
+    },
+    {
+      title: "Sài Gòn Nights",
+      genre: "Vinahouse",
+      vibe: "Hype",
+      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Sai.Gon.Nights.Vinahouse.mp3",
+    },
+    {
+      title: "Sáng Sớm Seattle",
+      genre: "Lo-fi",
+      vibe: "Chill",
+      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Sang.S.m.Seattle.Lo-fi.Chill.mp3",
+    },
+    {
+      title: "Pacific Northwest Drop",
+      genre: "Electronic",
+      vibe: "Late Night",
+      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Pacific.Northwest.Drop.mp3",
+    },
+    {
+      title: "Mưa Seattle",
+      genre: "Neo Soul",
+      vibe: "Reflective",
+      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/M.a.Seattle.Neo.Soul.mp3",
+    },
+    {
+      title: "Mekong Cha Cha Cha",
+      genre: "Latin-Viet Fusion",
+      vibe: "Feel Good",
+      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Mekong.Cha.Cha.Cha.mp3",
     },
   ],
 
@@ -132,7 +235,8 @@ const DATA = {
       title: "Building My First Full-Stack App with React & Node.js",
       date: "Apr 2026",
       readTime: "5 min read",
-      excerpt: "What I learned shipping a JWT-authenticated fitness tracker from zero to deployed — the wins, the bugs, and what I'd do differently.",
+      excerpt:
+        "What I learned shipping a JWT-authenticated fitness tracker from zero to deployed — the wins, the bugs, and what I'd do differently.",
       content: `After completing the UW Full Stack bootcamp, I wanted to build something real. The Fitness Tracker app was my first serious end-to-end project — React frontend, Express backend, MongoDB database, and JWT auth.\n\nThe biggest lesson: authentication is harder than it looks. Getting JWT refresh tokens right took me two full days. But once it clicked, the whole system made sense.\n\nIf you're starting out, my advice: build something you'd actually use. The motivation to fix bugs is completely different when it's your own tool.`,
     },
     {
@@ -142,7 +246,8 @@ const DATA = {
       title: "What Working at Blue Origin Taught Me About Systems Thinking",
       date: "Mar 2026",
       readTime: "6 min read",
-      excerpt: "Propulsion system integration at Blue Origin gave me a framework for thinking about complex systems that applies directly to software architecture.",
+      excerpt:
+        "Propulsion system integration at Blue Origin gave me a framework for thinking about complex systems that applies directly to software architecture.",
       content: `At Blue Origin, I worked on integrating and verifying propulsion systems. Every component had dependencies, failure modes, and edge cases that had to be accounted for before anything went to test.\n\nThat same thinking now shapes how I write software. Before I write a single line of code, I ask: what are the dependencies? What are the failure modes? What does the test plan look like?\n\nSystems engineering and software engineering are more alike than most people realize. The rigor transfers directly.`,
     },
     {
@@ -152,17 +257,20 @@ const DATA = {
       title: "Why Every Engineer Should Learn the Basics of Cloud",
       date: "Feb 2026",
       readTime: "4 min read",
-      excerpt: "You don't need to be a DevOps engineer to benefit from understanding AWS, Azure, and GCP. Here's where I'd start.",
+      excerpt:
+        "You don't need to be a DevOps engineer to benefit from understanding AWS, Azure, and GCP. Here's where I'd start.",
       content: `I came to cloud through necessity — deploying my own projects. But what surprised me was how much cloud knowledge changed the way I think about system design at work.\n\nStart with S3 (storage), EC2 (compute), and IAM (permissions). Those three services alone will give you 80% of the mental model you need.\n\nOnce you understand those, Lambda, RDS, and API Gateway will start to make sense naturally. Don't try to learn everything at once — just build something and deploy it.`,
     },
     {
       id: 5,
       category: "Medical Devices",
       icon: "🏥",
-      title: "Inside Siemens Ultrasound: What It Takes to Measure Acoustic Power",
+      title:
+        "Inside Siemens Ultrasound: What It Takes to Measure Acoustic Power",
       date: "Apr 2026",
       readTime: "6 min read",
-      excerpt: "As Acoustic Power Lab Lead at Siemens, I work at the intersection of precision measurement, regulatory compliance, and medical imaging. Here's what that actually looks like day to day.",
+      excerpt:
+        "As Acoustic Power Lab Lead at Siemens, I work at the intersection of precision measurement, regulatory compliance, and medical imaging. Here's what that actually looks like day to day.",
       content: `Most people don't think about what goes into an ultrasound machine beyond the gel and the probe. But inside every Siemens ultrasound system is a complex chain of hardware, software, and calibration processes that has to meet some of the strictest safety standards in any industry.\n\nAt Siemens Medical Solutions in Issaquah, I lead the Acoustic Power lab — the team responsible for measuring and validating the acoustic output of ultrasound transducers before they can be cleared for clinical use.\n\nWhat is acoustic power measurement?\nUltrasound imaging works by emitting high-frequency sound waves into the body and listening for the echoes. But those waves carry energy — and too much energy can cause tissue heating or cavitation. The FDA and IEC 60601 standards set strict limits on acoustic output, and every transducer must be tested and documented before it ships.\n\nOur lab measures parameters like Total Acoustic Power (TAP), Spatial Peak Temporal Average Intensity (ISPTA), and Mechanical Index (MI) — all of which determine how safe a given transducer is for diagnostic use.\n\nThe calibration challenge\nThe hardest part isn't the measurement itself — it's maintaining calibration accuracy across dozens of transducer models. A hydrophone that's off by even a fraction of a dB can cascade into a compliance failure that delays a product launch by weeks. I developed troubleshooting protocols that cut our measurement inconsistency rate significantly and introduced a streamlined inventory system that improved lab uptime.\n\nWhere software meets hardware\nOne of the most interesting parts of this role is managing software integration — installing and validating imaging software updates on ultrasound machines and ensuring acoustic output profiles remain within spec after each update. This is where my software development background becomes directly useful. Working in a regulated medical device environment, where documentation is as important as the measurement itself, has made me a more rigorous engineer in every domain I work in.`,
     },
     {
@@ -172,7 +280,8 @@ const DATA = {
       title: "From Aircraft Testing at Boeing to Writing Code",
       date: "Jan 2026",
       readTime: "5 min read",
-      excerpt: "How testing aircraft systems at Boeing gave me a debugging mindset that makes me a better software developer today.",
+      excerpt:
+        "How testing aircraft systems at Boeing gave me a debugging mindset that makes me a better software developer today.",
       content: `At Boeing, I tested mechanical and electrical aircraft systems. The job was methodical — follow the test plan, document everything, escalate anomalies immediately.\n\nThat discipline is rare in software. Most developers debug by gut feeling. I debug by forming a hypothesis, isolating variables, and testing systematically — exactly like aircraft systems validation.\n\nIf you want to get better at debugging, study how engineers in safety-critical industries approach problem-solving. The methodology is transferable.`,
     },
   ],

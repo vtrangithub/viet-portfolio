@@ -1,0 +1,257 @@
+/* ============================================================
+   Music.css — My Suno Tracks Section
+   Matches the existing site design system (--surf, --border,
+   --green, --muted, --mono variables from App.css / index.css)
+   ============================================================ */
+
+/* ── Intro blurb ── */
+.music-intro {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* ── Track list ── */
+.music-track-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 1.5rem;
+}
+
+.music-track-row {
+  display: grid;
+  grid-template-columns: 36px 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s;
+  outline: none;
+}
+
+.music-track-row:hover {
+  background: var(--surf);
+  border-color: var(--border);
+  transform: translateX(4px);
+}
+
+.music-track-row.active {
+  background: var(--surf);
+  border-color: var(--green);
+}
+
+/* ── Track number / waveform slot ── */
+.music-track-num {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: center;
+  width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ── Animated waveform bars (active track) ── */
+.music-waveform {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 16px;
+}
+
+.mbar {
+  width: 3px;
+  background: var(--green);
+  border-radius: 1px;
+  height: 4px;
+  animation: mPulse 0.8s ease-in-out infinite;
+}
+.mbar:nth-child(2) { animation-delay: 0.15s; }
+.mbar:nth-child(3) { animation-delay: 0.30s; }
+.mbar:nth-child(4) { animation-delay: 0.10s; }
+
+.music-track-row.paused .mbar {
+  animation-play-state: paused;
+}
+
+@keyframes mPulse {
+  0%, 100% { height: 4px;  }
+  50%       { height: 14px; }
+}
+
+/* ── Track info ── */
+.music-track-info {
+  min-width: 0;
+}
+
+.music-track-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+  transition: color 0.2s;
+}
+
+.music-track-row.active .music-track-title {
+  color: var(--green);
+}
+
+.music-track-genre {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* ── Vibe badge ── */
+.music-vibe-badge {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+
+/* ── Duration ── */
+.music-track-dur {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  min-width: 34px;
+  text-align: right;
+}
+
+/* ── Player bar ── */
+.music-player-bar {
+  background: var(--surf);
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  padding: 1rem 1.2rem 0.8rem;
+  transition: border-color 0.25s;
+}
+
+.music-player-bar:has(.music-play-btn.is-playing) {
+  border-color: var(--green);
+}
+
+.music-player-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+/* ── Play / pause button ── */
+.music-play-btn {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--green);
+  background: transparent;
+  color: var(--green);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+
+.music-play-btn:hover:not(:disabled) {
+  background: var(--green);
+  color: var(--surf);
+  transform: scale(1.07);
+}
+
+.music-play-btn.is-playing {
+  background: var(--green);
+  color: var(--surf);
+}
+
+.music-play-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* ── Now playing info ── */
+.music-now-playing {
+  flex: 1;
+  min-width: 0;
+}
+
+.music-now-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 2px;
+}
+
+.music-now-meta {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.music-suno-tag {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  color: var(--muted);
+  white-space: nowrap;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── Progress bar ── */
+.music-progress-track {
+  width: 100%;
+  height: 3px;
+  background: var(--border);
+  border-radius: 2px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.music-progress-fill {
+  height: 100%;
+  background: var(--green);
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+/* ── Time stamps ── */
+.music-time-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  color: var(--muted);
+}
+
+/* ── Responsive ── */
+@media (max-width: 480px) {
+  .music-track-row {
+    grid-template-columns: 28px 1fr auto;
+  }
+  .music-track-dur { display: none; }
+  .music-vibe-badge { display: none; }
+}
