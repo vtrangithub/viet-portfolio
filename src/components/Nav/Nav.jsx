@@ -12,10 +12,10 @@ import React, { useState } from 'react';
 import './Nav.css';
 import scrollTo from '../../utils/scrollTo';
 
-const NAV_IDS = ['hero', 'skills', 'projects', 'career', 'blog', 'hobbies', 'contact'];
+const NAV_IDS = ['hero', 'skills', 'projects', 'career', 'blog', 'hobbies', 'music', 'contact'];
 const NAV_LABELS = {
   hero: 'Home', skills: 'Skills', projects: 'Projects',
-  career: 'Career', blog: 'Blog', hobbies: 'Hobbies', contact: 'Contact',
+  career: 'Career', blog: 'Blog', hobbies: 'Hobbies', music: 'Music', contact: 'Contact',
 };
 
 function Nav({ active, onResumeOpen, theme, onThemeToggle }) {
