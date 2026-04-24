@@ -184,45 +184,44 @@ const DATA = {
   // ── MUSIC ── Tracks made with Suno AI ─────────────────────
   // How to add a new track:
   // 1. Export your Suno track as MP3
-  // 2. Upload it to GitHub Releases (Releases → Draft new release → attach file)
-  //    URL format: https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/YourTrack.mp3
-  // 3. Add a new entry below with title, genre, vibe, and src
+  // 2. Drop the file into /public/music/ in your repo
+  // 3. Add a new entry below — src uses the path "/music/YourFile.mp3"
   music: [
     {
       title: "Viet Seattle — Who I Am",
       genre: "Hip-Hop",
       vibe: "Intro",
-      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Viet.Seattle.Who.I.Am.Intro.mp3",
+      src: "/music/Viet.Seattle.Who.I.Am.Intro.mp3",
     },
     {
       title: "Sài Gòn Nights",
       genre: "Vinahouse",
       vibe: "Hype",
-      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Sai.Gon.Nights.Vinahouse.mp3",
+      src: "/music/Sai.Gon.Nights.Vinahouse.mp3",
     },
     {
       title: "Sáng Sớm Seattle",
       genre: "Lo-fi",
       vibe: "Chill",
-      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Sang.S.m.Seattle.Lo-fi.Chill.mp3",
+      src: "/music/Sang.S.m.Seattle.Lo-fi.Chill.mp3",
     },
     {
       title: "Pacific Northwest Drop",
       genre: "Electronic",
       vibe: "Late Night",
-      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Pacific.Northwest.Drop.mp3",
+      src: "/music/Pacific.Northwest.Drop.mp3",
     },
     {
       title: "Mưa Seattle",
       genre: "Neo Soul",
       vibe: "Reflective",
-      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/M.a.Seattle.Neo.Soul.mp3",
+      src: "/music/M.a.Seattle.Neo.Soul.mp3",
     },
     {
       title: "Mekong Cha Cha Cha",
       genre: "Latin-Viet Fusion",
       vibe: "Feel Good",
-      src: "https://github.com/vtrangithub/viet-portfolio/releases/download/v1.0/Mekong.Cha.Cha.Cha.mp3",
+      src: "/music/Mekong.Cha.Cha.Cha.mp3",
     },
   ],
 
