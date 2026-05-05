@@ -1,0 +1,37 @@
+/* ── MissionControl.css ─────────────────────────────── */
+
+.mc-live-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.mc-live-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  flex-shrink: 0;
+  animation: mc-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes mc-pulse {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(29, 255, 160, 0.5); }
+  50%       { opacity: 0.55; box-shadow: 0 0 0 6px rgba(29, 255, 160, 0); }
+}
+
+.mc-live-label {
+  font-family: var(--mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.22em;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.mc-live-sub {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}

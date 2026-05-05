@@ -30,11 +30,12 @@ import Career        from './components/Career/Career';
 import Blog          from './components/Blog/Blog';
 import TechNews      from './components/TechNews/TechNews';
 import Hobbies       from './components/Hobbies/Hobbies';
-import Music         from './components/Music/Music';
-import Contact       from './components/Contact/Contact';
-import ResumeModal   from './components/ResumeModal/ResumeModal';
+import Music          from './components/Music/Music';
+import MissionControl from './components/MissionControl/MissionControl';
+import Contact        from './components/Contact/Contact';
+import ResumeModal    from './components/ResumeModal/ResumeModal';
 
-const SECTION_IDS = ['hero', 'skills', 'projects', 'career', 'blog', 'tech-news', 'hobbies', 'music', 'contact'];
+const SECTION_IDS = ['hero', 'skills', 'projects', 'mission-control', 'career', 'blog', 'tech-news', 'hobbies', 'music', 'contact'];
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -76,6 +77,7 @@ function App() {
         <Hero onResumeOpen={() => setResumeOpen(true)} />
         <Skills />
         <Projects />
+        <MissionControl />
         <Career />
         <Blog />
         <TechNews />

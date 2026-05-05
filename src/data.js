@@ -81,6 +81,19 @@ const DATA = {
 
   projects: [
     {
+      title: "Personal Portfolio Website",
+      url: "https://viethungtranwebdev.com",
+      tag: "React · Material-UI · Custom Theme",
+      stack: [
+        "React",
+        "Material-UI",
+        "MUI X Charts",
+        "MUI X DataGrid",
+        "CSS Variables",
+      ],
+      desc: "Custom-built portfolio with hand-crafted dark theme and a live Material-UI showcase — 'Mission Control,' a simulated aerospace telemetry dashboard featuring MUI Tabs, Charts, DataGrid, and a custom ThemeProvider. Deployed at viethungtranwebdev.com.",
+    },
+    {
       title: "Fitness Tracker App",
       url: "https://github.com/vtrangithub/fitness-tracker",
       tag: "Full Stack",
